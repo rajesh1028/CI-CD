@@ -37,5 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Print Hello World
+      - name: Print Node version
         run: node --version
+      - name: Print NPM version
+        run: npm --version
