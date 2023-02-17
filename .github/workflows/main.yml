@@ -31,7 +31,8 @@ variable: ${{ github.VARIABLE_NAME }}
 # Github
 
 name: Github action ofr
-on: push
+on: 
+  - push: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
