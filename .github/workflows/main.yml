@@ -1,1 +1,43 @@
 
+
+
+title: Website Name
+descripion: A website for uploading content
+age: 30
+
+# array
+tags:
+  - technology
+  - images
+  - creative
+
+# indentation matters
+# spaces
+
+# objects
+address:
+  street: MG Road
+  city: Bengaluru
+  state: KA
+
+# github actions
+# env
+
+value: ${{ env.VALUE }}
+variable: ${{ github.VARIABLE_NAME }}
+
+
+
+# Github
+
+name: Github action ofr
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Print Hello World
+      - uses: actions/checkout@v3
+      - run: echo "Hello World!"
